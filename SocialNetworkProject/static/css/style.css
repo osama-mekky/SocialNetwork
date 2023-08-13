@@ -1,0 +1,133 @@
+h1{
+    color: orangered;
+    text-align: center;
+}
+body{
+    background-color: rgb(185, 194, 194);
+    
+}
+
+.login{
+    margin: 150px;
+}
+.img_home{
+    position:absolute;
+    left: 501px;
+}
+.ss{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: orangered;
+    bottom: 400px;
+    
+}
+.img_login{
+    position:absolute;
+    left: 700px;
+    
+   
+}
+.mess{
+    color: orangered;
+    font-size: 25px;
+}
+
+.pro{
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.container{
+    width: fit-content;
+    margin: 60px;
+    text-align: center;
+    border-style:solid ;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(253, 241, 225);
+}
+
+div.new_post{
+    
+    width: 800px;
+    height: auto;
+    background-color: rgb(253, 241, 225);
+    border-style:solid ;
+    border-width: 5px;
+    border-radius: 5px;
+    position: relative;
+    
+    left: 600px;
+    bottom: 470px;
+}
+.inside_new_post{
+    margin: 10px;
+    padding: 20px;
+    border-style:dashed ;
+    border-width: 1px;
+    border-radius: 1px;
+
+}
+
+div.search{
+    width: 1500px;
+    height: auto;
+    background-color: rgb(185, 194, 194);
+    padding: 20px;
+    position: relative;
+    margin-left: 115px;
+    margin-top: 20px;
+    
+    
+
+
+}
+.inside_search{
+    background-color: wheat;
+    border-style:solid ;
+    border-width: 5px;
+    border-radius: 50px;
+    height: 200px;
+    padding: 10px;
+    margin: 15px;
+
+}
+
+
+div.home{
+    width: 1500px;
+    height: auto;
+    background-color: rgb(185, 194, 194);
+    padding: 20px;
+    position: relative;
+    margin-left: 115px;
+    margin-top: 20px;
+   
+}
+
+.inside_home{
+    background-color: wheat;
+    border-style:solid ;
+    border-width: 5px;
+    border-radius: 50px;
+    height: 200px;
+    padding: 10px;
+    margin: 15px;
+}
+
+
+.a{
+    position: relative;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+
+
+
+
+

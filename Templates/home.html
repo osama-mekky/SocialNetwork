@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+
+
+<div class="home">
+{% for post in object_list %}
+    <div class="inside_home">
+        <img style="position: absolute; left:0; margin-left:120px;margin-top:20px "  width="160px" src="{{post.user.profile_pic.url}}" >
+        <div class="a">
+        <a href="user/{{post.user.username}}"><h4 style="color:orangered; position: absolute;margin-left:300px;margin-top:5px;">@{{post.user.username}}{{post.user.last_name}}</h4></a>
+        <h5 style="position: absolute;margin-left:300px;margin-top:35px;">{{post.caption}}</h5>
+        <h6 style="position: absolute;margin-left:300px;margin-top:75px;">{{post.date_created}}</h6>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

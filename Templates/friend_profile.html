@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{friend.username}}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="user-image">
+    <img style="width: 260px;" src="{{friend.profile_pic.url}}" alt="">
+    
+</div>
+    <div class="content">
+        <h3 class="name">{{friend.username}} {{friend.last_name}}</h3>
+        <p class="username">@{{friend.last_name}}</p>
+        <h6>{{friend.get_num_posts}} Posts</h6>
+        <p class="details">
+            {{friend.bio}}
+            <br>
+            {% if is_following %}
+            <a href="/unfollow/{{friend.id}}"><button type="submit" class="btn btn-danger">Unfollow</button></a>
+            <br>
+            <br>
+            {% else %}
+            <a href="/follow/{{friend.id}}"><button type="submit" class="btn btn-primary">Follow</button></a>
+            {% endif %}
+            
+        
+        </p>
+    </div>
+</div>
+
+<div class="new_post">
+
+    
+
+    {% for post in object_list %}
+
+    <div class="inside_new_post">
+
+        <h6 style="color: orangered;">{{post.caption}}</h6>
+        <h6>{{post.date_created}}</h6>
+    </div>
+    
+
+
+{% endfor %}
+
+</div>
+
+ 
+<!-- This is link of adding small images
+     which are used in the link section  -->
+
+
+{% endblock  %}    

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+
+<div class="login">
+  <img class="img_login" src="{% static 'img/login.jpg' %}" alt="">
+
+
+    <form method="POST">
+        {% csrf_token %}
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <div style="position: absolute;">
+        <label class="form-label">UserName</label>
+        <input type="text" name="username" class="form-control" required>
+        <label class="form-label">Password</label>
+        <input type="password" name="password" id="inputPassword5" class="form-control" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <button type="submit" class="btn btn-success">Login</button>
+        <a class="btn btn-primary" href="{% url 'singup' %}" role="button">SingUp</a>
+        <br>
+        <br>
+        <div class="mess">
+        {% for mess in messages %}
+
+            {{mess}}
+
+        {% endfor %}
+      </div>
+        
+    </form>
+</div>
+{% endblock %}    

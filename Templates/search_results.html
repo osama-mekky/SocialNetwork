@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+<div class="search">
+{% for user in object_list %}
+     
+    <div class="inside_search">
+    <a href="user/{{user.username}}"><h3 style="display: inline-block; color:rgb(25, 0, 255);position: absolute;  margin-left:420px;margin-top:20px">@{{user.username}}{{user.last_name}}</h3></a>
+    <img style="position: absolute; left:0; margin-left:120px;margin-top:20px "  width="160px" src="{{user.profile_pic.url}} ">
+    </div>
+{% endfor %}    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock  %}
